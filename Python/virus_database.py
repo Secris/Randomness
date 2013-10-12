@@ -9,7 +9,7 @@ end_id = 3676398
 
 full_url = "http://www.mcafee.com/threat-intelligence/malware/default.aspx?id="
 
-for s in range(start_id, end_id):
+for s in range(start_id, end_id + 1):
 	current_address = full_url + str(s)
 	f = urllib.urlopen(current_address)
 	p = f.read()
