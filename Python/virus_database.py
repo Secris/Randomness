@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # A python script to grab approximately all the titles from the McAfee virus database
+# Use at your own risk
 
 import urllib
 
