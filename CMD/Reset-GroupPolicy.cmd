@@ -1,4 +1,5 @@
-RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
-RD /S /Q "%WinDir%\System32\GroupPolicy"
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Group Policy Objects"
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies"
+
 gpupdate /force
 
